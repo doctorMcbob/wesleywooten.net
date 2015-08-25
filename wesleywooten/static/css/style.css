@@ -2,3 +2,42 @@ body {
     font-family: "Helvetica", "Arial", "Serif";
     text-align: center;
 }
+
+/* SECTIONS */
+.sect {
+    border: 2px solid #000;
+    height: 500px;
+}
+
+.sect:nth-child(odd) {
+    text-align: left;
+}
+
+.sect:nth-child(even) {
+    text-align: right;
+}
+
+/* CONTENT */
+.content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* LISTS */
+#past li {
+    width: 50%;
+}
+
+.lidiv {
+    text-align: left;
+}
+
+#past li:nth-child(odd) {
+    float: left;
+}
+
+#past li:nth-child(even) {
+    float: right;
+}

@@ -4,7 +4,9 @@
   <head>
     <title>Wesley Wooten | Python Developer</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  </head>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+ </head>
   <body>
     <header>
       <p>
@@ -12,47 +14,56 @@
       </p>
     </header>
     <main>
-      <div id='summary'>
-	<h1>Summary</h1>
-	<p>
-	  
-	</p>
+      <div id="summary" class="sect">
+	<div class="content">
+	  <h1>Summary</h1>
+	  <p>
+	    I am Wesley Wooten. I love Python and the internet. 
+	  </p>
+	</div>
       </div>
 
-      <div id='current'>
-	<h1>What I'm Working On</h1>
-	<p>
-	  A Multi-User Dungeon-Crawler Text-Adventure Browser-Based Rouge-Like written with Python/Django
-	</p>
-	<p>A work in progress</p>
+      <div id="current" class="sect">
+	<div class="content">
+	  <h1>What I'm Working On</h1>
+	  <p>
+	    A Multi-User Dungeon-Crawler Text-Adventure Browser-Based Rouge-Like written with Python/Django
+	  </p>
+	  <p>A work in progress</p>
+	</div>
       </div>
 
-      <div id='past'>
-	<h1>Websites I've Worked On</h1>
-	<ul>
-	  <li>
-	    <a href='http://sherlockengine.com/'>SherlockEngine</a>
-	    <p>
-	      A website that attempts to read the users mind as they answer questions
-	    </p>
-	    <p>Written in Python/Pyramid</p>
-	  </li>
-	  <li>
-	    <a href='http://calcutor.net/'>Calcutor.net</a>
-	    <p>
-	      Emulates a TI-83 graphing calculator
-	    </p>
-	    <p>Written in Python/Pyramid</p>
-	  </li>
-	</ul>
+      <div id="past" class="sect">
+	<div class="content">
+	  <h1>Websites I've Worked On</h1>
+	  <ul>
+	    <li>
+	      <div class="lidiv">
+		<a href="http://sherlockengine.com/">SherlockEngine</a>
+		<p>
+		  A website that attempts to read the users mind as they answer questions
+		</p>
+		<p>Written in Python/Pyramid</p>
+	      </div>
+	    </li>
+	    <li>
+	      <div class="lidiv">
+		<a href="http://calcutor.net/">Calcutor.net</a>
+		<p>
+		  Emulates a TI-83 graphing calculator
+		</p>
+		<p>Written in Python/Pyramid</p>
+	      </div>
+	    </li>
+	  </ul>
+	</div>
       </div>
-
     </main>
     <footer>
-      <div class='mylinks'>
+      <div class="mylinks">
 	<ul>
-	  <li><a href='https://github.com/doctormcbob/'>Github</a></li>
-	  <li><a href='https://www.linkedin.com/in/wesleywooten'>LinkedIn</a></li>
+	  <li><a href="https://github.com/doctormcbob/">Github</a></li>
+	  <li><a href="https://www.linkedin.com/in/wesleywooten">LinkedIn</a></li>
 	</ul>
       </div>
     </footer>
